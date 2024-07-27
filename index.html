@@ -31,6 +31,7 @@
           <a class="logo-web" href="./index.html"
             >Web<span class="logo-studio">Studio</span></a
           >
+          
           <ul class="meny">
             <li class="meny-part">
               <a class="meny-link meny-item" href="./index.html">Studio</a>
@@ -57,12 +58,18 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="header-icons" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+
+        </button>
       </div>
     </header>
 
     <main>
       <section class="start-section">
-        <div class="container">
+        <div class="container start">
           <h1 class="page-title">
             Effective Solutions<span class="page-title-second">
               for Your Business</span
@@ -131,13 +138,15 @@
       </section>
 
       <section class="our-team-foto section">
-        <div class="container">
+        <div class="container foto-section">
           <h2 class="title">Our Team</h2>
           <ul class="foto-list">
             <li class="explanation-foto">
               <img
                 class="our-foto"
-                src="./images/img-3.jpg"
+                srcset="./images/team/img.jpg 1x, 
+                ./images/team/img-2x.jpg 2x"
+                src="./images/team/img.jpg"
                 alt="Designer Foto"
                 width="264"
               />
@@ -197,7 +206,9 @@
             <li class="explanation-foto">
               <img
                 class="our-foto"
-                src="./images/img-2.jpg"
+                srcset="./images/team/img-1.jpg 1x, 
+                ./images/team/img-1-2x.jpg 2x"
+                src="./images/team/img-1.jpg"
                 alt="Developer Foto"
                 width="264"
               />
@@ -256,7 +267,9 @@
             <li class="explanation-foto">
               <img
                 class="our-foto"
-                src="./images/img-1.jpg"
+                srcset="./images/team/img-2.jpg 1x, 
+                ./images/team/img-2-2x.jpg 2x"
+                src="./images/team/img-2.jpg"
                 alt="Marketing Foto"
                 width="264"
               />
@@ -315,7 +328,9 @@
             <li class="explanation-foto">
               <img
                 class="our-foto"
-                src="./images/img.jpg"
+                srcset="./images/team/img-3.jpg 1x, 
+                ./images/team/img-3-2x.jpg 2x"
+                src="./images/team/img-3.jpg"
                 alt="Designer Foto"
                 width="264"
               />
@@ -380,12 +395,23 @@
           <ul class="foto-list-our">
             <li class="explanation-foto-our">
               <div class="list-item">
-                <img
+          <picture>
+            <source srcset="./images/portfolio/desctop/bank-desc.jpg 1x,
+              ./images/portfolio/desctop/bank-desc-2x.jpg 2x"
+              media="(min-width:1158px)"/>
+            <source srcset="./images/portfolio/tablet/bank-tab.jpg 1x,
+              ./images/portfolio/tablet/bank-tab-2x.jpg 2x"
+              media="(min-width:768px)"/>
+            <source srcset="./images/portfolio/mobile/bank-mob.jpg 1x,
+              ./images/portfolio/mobile/bank-mob-2x.jpg 2x"
+              media="(max-width:767px)"/>
+              <img
                   class="foto-app"
-                  src="./images/img-4.jpg"
+                  src="./images/portfolio/desctop/bank-desc.jpg"
                   alt="Banking App Foto"
                   width="360"
                 />
+          </picture>
                 <p class="list-item-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -401,12 +427,23 @@
 
             <li class="explanation-foto-our">
               <div class="list-item">
-                <img
+            <picture>
+            <source srcset="./images/portfolio/desctop/gas-desc.jpg 1x,
+              ./images/portfolio/desctop/gas-desc-2x.jpg 2x"
+              media="(min-width:1158px)"/>
+            <source srcset="./images/portfolio/tablet/gas-tab.jpg 1x,
+              ./images/portfolio/tablet/gas-tab-2x.jpg 2x"
+              media="(min-width:768px)"/>
+            <source srcset="./images/portfolio/mobile/gas-mob.jpg 1x,
+              ./images/portfolio/mobile/gas-mob-2x.jpg 2x"
+              media="(max-width:767px)"/>
+              <img
                   class="foto-app"
-                  src="./images/img-5.jpg"
+                  src="./images/portfolio/desctop/gas-desc.jpg"
                   alt="Cashless Payment Foto"
                   width="360"
                 />
+          </picture>
                 <p class="list-item-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -421,12 +458,24 @@
 
             <li class="explanation-foto-our">
               <div class="list-item">
-                <img
+          <picture>
+            <source srcset="./images/portfolio/desctop/med-desc.jpg 1x,
+              ./images/portfolio/desctop/med-desc-2x.jpg 2x"
+              media="(min-width:1158px)"/>
+            <source srcset="./images/portfolio/tablet/med-tab.jpg 1x,
+              ./images/portfolio/tablet/med-tab-2x.jpg 2x"
+              media="(min-width:768px)"/>
+            <source srcset="./images/portfolio/mobile/med-mob.jpg 1x,
+              ./images/portfolio/mobile/med-mob-2x.jpg 2x"
+              media="(max-width:767px)"/>
+              <img
                   class="foto-app"
-                  src="./images/img-6.jpg"
+                  src="./images/portfolio/desctop/med-desc.jpg"
                   alt="Meditation App Foto"
                   width="360"
                 />
+          </picture>
+                
                 <p class="list-item-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -441,12 +490,24 @@
 
             <li class="explanation-foto-our">
               <div class="list-item">
-                <img
+            <picture>
+            <source srcset="./images/portfolio/desctop/taxi-desc.jpg 1x,
+              ./images/portfolio/desctop/taxi-desc-2x.jpg 2x"
+              media="(min-width:1158px)"/>
+            <source srcset="./images/portfolio/tablet/taxi-tab.jpg 1x,
+              ./images/portfolio/tablet/taxi-tab-2x.jpg 2x"
+              media="(min-width:768px)"/>
+            <source srcset="./images/portfolio/mobile/taxi-mob.jpg 1x,
+              ./images/portfolio/mobile/taxi-mob-2x.jpg 2x"
+              media="(max-width:767px)"/>
+              <img
                   class="foto-app"
-                  src="./images/img-7.jpg"
+                  src="./images/portfolio/desctop/taxi-desc.jpg"
                   alt="Taxi Service Foto"
                   width="360"
                 />
+          </picture>
+                
                 <p class="list-item-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -461,12 +522,23 @@
 
             <li class="explanation-foto-our">
               <div class="list-item">
-                <img
+                <picture>
+            <source srcset="./images/portfolio/desctop/screen-desc.jpg 1x,
+              ./images/portfolio/desctop/screen-desc-2x.jpg 2x"
+              media="(min-width:1158px)"/>
+            <source srcset="./images/portfolio/tablet/screen-tab.jpg 1x,
+              ./images/portfolio/tablet/screen-tab-2x.jpg 2x"
+              media="(min-width:768px)"/>
+            <source srcset="./images/portfolio/mobile/screen-mob.jpg 1x,
+              ./images/portfolio/mobile/screen-mob-2x.jpg 2x"
+              media="(max-width:767px)"/>
+              <img
                   class="foto-app"
-                  src="./images/img-8.jpg"
+                  src="./images/portfolio/desctop/screen-desc.jpg"
                   alt="Screen Illustrations Foto"
                   width="360"
                 />
+          </picture>
                 <p class="list-item-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -481,12 +553,23 @@
 
             <li class="explanation-foto-our">
               <div class="list-item">
-                <img
+                 <picture>
+            <source srcset="./images/portfolio/desctop/online-desc.jpg 1x,
+               ./images/portfolio/desctop/online-desc-2x.jpg 2x"
+              media="(min-width:1158px)"/>
+            <source srcset="./images/portfolio/tablet/online-tab.jpg 1x,
+              ./images/portfolio/tablet/online-tab-2x.jpg 2x"
+              media="(min-width:768px)"/>
+            <source srcset="./images/portfolio/mobile/online-mob.jpg 1x,
+              ./images/portfolio/mobile/online-mob-2x.jpg 2x"
+              media="(max-width:767px)"/>
+              <img
                   class="foto-app"
-                  src="./images/img-9.jpg"
+                  src="./images/portfolio/desctop/online-desc.jpg"
                   alt="Online Courses Foto"
                   width="360"
                 />
+          </picture>
                 <p class="list-item-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -650,11 +733,12 @@
               ><span class="checkbox-input">
                 <svg class="checkbox-input-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
-                </svg>
-              </span>
-              I accept the terms and conditions of the
-              <a class="checkbox-text-item" href="" target="_blank"
-                >Privacy Policy</a
+                </svg> </span
+              ><span>
+                I accept the terms and conditions of the
+                <a class="checkbox-text-item" href="" target="_blank"
+                  >Privacy Policy</a
+                ></span
               >
             </label>
           </div>
@@ -662,6 +746,101 @@
             Send
           </button>
         </form>
+      </div>
+    </div>
+
+    
+  <div class="mobile-meny">
+      <div class="mobile-conteiner">
+        <div>
+        <button class="mobile-btn" type="button">
+          <svg class="mobile-btn-logo" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <div class="mobile-container-meny">
+          <ul class="mobile-meny-item">
+            <li class="mobile-meny-part">
+              <a class="mobile-link meny-logo" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-meny-part">
+              <a class="mobile-link" href="">Portfolio</a>
+            </li>
+            </li class="mobile-meny-part">
+              <a class="mobile-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+        
+        <div>
+        <div class="address-container">
+      <address class="mobile-address">
+        <ul class="mobile-contacts-item">
+          <li class="mobile-contacts-net">
+            <a class="mobile-contacts-link link-logo" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+          </li>
+          <li class="mobile-contacts-net">
+            <a class="mobile-contacts-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+          </li>   
+        </ul>
+      </address>
+        </div>
+
+        <div class="link-container">
+          <ul class="meny-social-links">
+              <li class="meny-social-links-item">
+                  <a
+                      class="meny-icons-link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                    >
+                  <svg class="s-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="meny-social-links-item">
+                    <a
+                      class="meny-icons-link"
+                      href="https://www.twitter.com/"
+                      target="_blank"
+                    >
+                      <svg class="s-icons" width="24" height="24">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="meny-social-links-item">
+                    <a
+                      class="meny-icons-link"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                    >
+                      <svg class="s-icons" width="24" height="24">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="meny-social-links-item">
+                    <a
+                      class="meny-icons-link"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                    >
+                      <svg class="s-icons" width="24" height="24">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                  </a>
+                </li>
+            </ul>
+        </div>
+        </div>
       </div>
     </div>
   </body>
